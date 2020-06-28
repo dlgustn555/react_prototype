@@ -10,7 +10,7 @@ const router = new Router();
 router.use("/api", api);
 
 // 라우터 미들웨어 추가
-app.use(router.routes());[server] server init #3
+app.use(router.routes());
 app.use(router.allowedMethods());
 
 // 서버 포트 설정
