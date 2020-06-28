@@ -7,10 +7,10 @@ const app = new Koa();
 const router = new Router();
 
 // 라우터 모듈 추가
-router.use("/api", api.routes());
+router.use("/api", api);
 
 // 라우터 미들웨어 추가
-app.use(router.routes());
+app.use(router.routes());[server] server init #3
 app.use(router.allowedMethods());
 
 // 서버 포트 설정

@@ -6,4 +6,4 @@ api.get("/test", (ctx) => {
   ctx.body = "/TEST RESPONSE....";
 });
 
-module.exports = api;
+module.exports = api.routes();
