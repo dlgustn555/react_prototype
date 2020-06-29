@@ -1,0 +1,26 @@
+{
+    "name": "react_prototype",
+    "version": "1.0.0",
+    "description": "react 로 작성하는 프로토타입 (client &amp; server)",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {
+        "init:all": "yarn init:client && yarn init:server",
+        "init:client": "cd client && yarn install",
+        "init:server": "cd server && yarn install",
+        "start": "yarn start:client && yarn start:server",
+        "start:client": "cd client && yarn start",
+        "start:server": "cd server && yarn local"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dlgustn555/react_prototype.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dlgustn555/react_prototype/issues"
+    },
+    "homepage": "https://github.com/dlgustn555/react_prototype#readme"
+}
