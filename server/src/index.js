@@ -9,7 +9,12 @@ const router = new Router()
 
 // 웹훅 추가
 router.post('/payload', (ctx) => {
-    ctx.body = ctx.body
+    console.log('===========')
+    console.log('===========')
+    console.log(ctx.request.body)
+    console.log('===========')
+    console.log('===========')
+    ctx.body = ctx.request.body
 })
 
 // 라우터 모듈 추가
