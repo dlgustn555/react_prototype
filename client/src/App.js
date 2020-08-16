@@ -6,7 +6,7 @@ import ROUTES from "./constants/routes";
 
 const Home = lazy(() => import("./pages/Home"));
 const LazyIcon = lazy(() => import("./pages/LazyIcon"));
-
+const a = "aaa";
 const AppCommonProvider = ({ contexts, children }) =>
   contexts.reduce(
     (prev, context) => createElement(context, { children: prev }),
