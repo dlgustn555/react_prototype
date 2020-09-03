@@ -1,16 +1,21 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "./src/index.js",
-  "scripts": {
-    "local": "nodemon --watch ./src ./src/index.js"
-  },
-  "author": "Lee HyunSu",
-  "license": "ISC",
-  "dependencies": {
-    "koa": "^2.13.0",
-    "koa-router": "^9.0.1",
-    "nodemon": "^2.0.4"
-  }
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./src/index.js",
+    "scripts": {
+        "local": "nodemon --watch ./src ./src/index.js",
+        "ws": "nodemon --watch ./src/ws.js",
+        "sc": "nodemon --watch ./src/sc.js",
+        "socket": "nodemon --watch ./src/socket.io-client.js"
+    },
+    "author": "Lee HyunSu",
+    "license": "ISC",
+    "dependencies": {
+        "koa": "^2.13.0",
+        "koa-bodyparser": "^4.3.0",
+        "koa-router": "^9.0.1",
+        "nodemon": "^2.0.4",
+        "ws": "^7.3.1"
+    }
 }
