@@ -1,11 +1,11 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import {useHomeSotre} from '../conetexts/HomeContext'
+import { Link } from 'react-router-dom'
+import { useHomeSotre } from '../conetexts/HomeContext'
 
 import ROUTES from '../constants/routes'
 
 const Home = () => {
-    const {name} = useHomeSotre()
+    const { name } = useHomeSotre()
 
     return (
         <>
@@ -16,6 +16,9 @@ const Home = () => {
                 </li>
                 <li>
                     <Link to={ROUTES.LAZY_ICON}>Lazy Icon</Link>
+                </li>
+                <li>
+                    <Link to={ROUTES.SESSION_IO}>session io</Link>
                 </li>
             </ul>
         </>
